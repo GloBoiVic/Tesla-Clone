@@ -54,7 +54,6 @@ header nav.right {
 
 section {
   height: 100vh;
-  border: 1px solid red;
   background-size: cover;
   background-position: center center;
 }
@@ -119,6 +118,10 @@ aside {
   font-weight: 500;
 }
 
+aside.active {
+  right: 0;
+}
+
 aside a {
   display: block;
   color: inherit;
@@ -136,6 +139,7 @@ aside button.close {
   right: 10px;
   padding: 10px;
   font-weight: 100;
+  cursor: pointer;
 }
 
 .backdrop {
@@ -144,4 +148,8 @@ aside button.close {
   inset: 0;
   background-color: rgba(0, 0, 0, 0.35);
   backdrop-filter: blur(5px);
+}
+
+.backdrop.active {
+  display: block;
 }
